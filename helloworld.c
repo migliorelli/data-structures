@@ -5,11 +5,10 @@ void reverse(char *str)
 {
   int start = 0;
   int end = strlen(str) - 1;
-  char buffer;
-
+  
   while (start < end)
   {
-    buffer = str[start];
+    char buffer = str[start];
     str[start] = str[end];
     str[end] = buffer;
 
